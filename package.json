@@ -4,7 +4,7 @@
   "description": "react custmize app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server webpack -d --watch",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,5 +28,11 @@
     "react-dom": "^15.6.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2"
   }
 }

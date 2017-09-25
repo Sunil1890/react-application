@@ -1,23 +1,22 @@
-var config = {
-   entry: './main.js', // entry point
-   output: {
-         filename: 'index.js', // place where bundled app will be served
-      },
-   devServer: {
-         inline: true, // autorefresh
-         port: 8080 // development port server
-      },
-   module: {
-         loaders: [
-            {
-               test: /\.jsx?$/, // search for js files 
-               exclude: /node_modules/,
-               loader: 'babel-loader',
-   query: {
-               presets: ['es2015', 'react'] // use es2015 and react
-            }
-         }
-      ]
-   }
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: './client/index.html',
+  filename: 'index.html',
+  inject: 'body'
+})
+
+module.exports = {
+  entry: './client/index.js',
+  output: {
+    path: path.resolve('dist'),
+    filename: 'index_bundle.js'
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+    ]
+  },
+  plugins: [HtmlWebpackPluginConfig]
 }
-module.exports = config;

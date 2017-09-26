@@ -1,3 +1,23 @@
+body {
+    font-family: gotham-rounded,Helvetica,"Varela Round",sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
 .head{
 	background-color: red;
+}
+.tabstyle {
+	li {
+	font-family: ProximaNova;
+	display: inline;
+	padding: 19px 7px 17px;
+	cursor: pointer;
+	color: black;
+	font-size: 16px;
+	line-height: 28px;
+		:hover{
+			background-color: black;
+			color: white;
+		}
+	}
 }

@@ -27,6 +27,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.7.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   },

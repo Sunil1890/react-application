@@ -5,6 +5,7 @@ import Movies from "./movies"
 import Sports from "./sports"
 import Livkids from "./livkids"
 import '../scss/navbar.scss'
+
 class App extends Component {
 	render(){
 		return (
@@ -25,7 +26,8 @@ class App extends Component {
 	      <Route path="/sports" component={Sports}/>
 	      <Route path="/livkids" component={Livkids}/>
    		</div>
- 		</Router>
+ 			</Router>
+
 		</div>
 		)
 	}

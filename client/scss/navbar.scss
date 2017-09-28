@@ -1,0 +1,56 @@
+//colors
+$white: #fff;
+$color_mine_shaft_approx: #333;
+
+.nav-bar {
+	position: fixed;
+	top: 15px;
+	left: 7px;
+	z-index: 1000;
+	nav {
+		float: left;
+		li {
+			list-style-type: none;
+			background-color: $white;
+			background-size: 200% 100%;
+			background-position: 90% 0;
+			display: inline;
+			a {
+				/*display: block;*/
+				padding: 20px;
+				color: $color_mine_shaft_approx;
+				text-align: center;
+				text-transform: capitalize;
+				text-decoration: none;
+				&:hover {
+					color: $white;
+					background-color: $color_mine_shaft_approx;
+				}
+			}
+			&:hover {
+				background-position: 0 0;
+			}
+		}
+	}
+	input {
+		display: none;
+	}
+	label {
+		display: inline-block;
+		margin-left: auto;
+		width: 40px;
+		padding: 5px 0;
+		text-align: center;
+		cursor: pointer;
+		position: absolute;
+	}
+	menu {
+		left: -7px;
+		padding: 0;
+		top: 32px;
+		display: inline;
+	}
+}
+#toggle:checked ~ nav {
+	margin-left: -250px;
+}

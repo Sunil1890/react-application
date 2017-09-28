@@ -5,7 +5,7 @@ class Shows extends Component {
 		return (
 		<div>
     	<SimpleSlider />
-  	</div>
+  		</div>
 		)
 	}
 }
